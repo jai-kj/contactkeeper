@@ -19,7 +19,7 @@ const Login = ({ error, isAuthenticated, loginUser, clearErrors, setAlert, histo
       history.push('/')
     }
 
-    if(error === 'Invalid Credentials!' || error === 'Not Authorized, Access Denied!' ){
+    if(error === 'Invalid Credentials!'){
       setAlert(error, 'danger', 2000)
       clearErrors()
     }
